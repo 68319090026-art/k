@@ -1,0 +1,38 @@
+/* พื้นหลังดำสนิทเพื่อให้หัวใจเด่นขึ้น */
+body {
+    background-color: black;
+    color: pink; /* สีเริ่มต้นสำหรับตัวหนังสือ */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* กำหนดขนาดและตำแหน่งของ container รูปหัวใจ */
+.heart {
+    position: relative;
+    width: 600px; /* ขนาดของ container */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* สไตล์สำหรับแต่ละตัวหนังสือ 'I Love You' */
+.heart span {
+    position: absolute;
+    font-size: 14px; /* ขนาดตัวหนังสือตามใจชอบ */
+    font-weight: bold;
+    transform-origin: 0 0; /* จุดหมุนอยู่ที่มุมซ้ายบน */
+    pointer-events: none; /* ห้ามคลิกตัวหนังสือ */
+}
+
+/* ทำให้เกิดเอฟเฟกต์สีชมพูเรืองแสง */
+.heart span {
+    text-shadow: 
+        0 0 5px rgba(255, 105, 180, 0.7),
+        0 0 10px rgba(255, 105, 180, 0.5);
+}
