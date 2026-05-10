@@ -2,27 +2,21 @@ body {
     background-color: #000;
     margin: 0;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.heart {
+    position: relative; /* เป็นจุดศูนย์กลาง */
+    width: 100vw;
     height: 100vh;
 }
 
-.heart-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.heart-container span {
-    position: absolute;
+.heart span {
+    position: absolute; /* สำคัญมาก! เพื่อให้มันขยับไปมาได้อิสระ */
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    font-size: 14px;
     white-space: nowrap;
-    text-transform: uppercase;
-    /* เอฟเฟกต์เรืองแสงแบบละมุน */
-    text-shadow: 0 0 10px var(--color), 0 0 20px var(--color);
+    transform-origin: center;
     transition: none;
-    user-select: none;
+    /* เรืองแสง */
+    text-shadow: 0 0 8px var(--color), 0 0 15px var(--color);
 }
